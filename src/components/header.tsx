@@ -21,12 +21,11 @@ export default function Header() {
 
   return (
     <header className="p-4 flex justify-between border-b border-gray-300">
-      <h1 className="font-bold">TodoApp</h1>
+      <h1 className="font-bold">TODO</h1>
       <nav className="space-x-4">
-        <Link href="/">Home</Link>
         {isLoggedIn ? (
           <>
-            <Link href="/todos">Todos</Link>
+            <Link href="/todos">Todo List</Link>
             <button
               onClick={handleLogout}
               className="underline hover:text-gray-600"
