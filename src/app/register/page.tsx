@@ -13,7 +13,7 @@ export default function Register() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/auth/register", {
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/register`, {
         name,
         email,
         password,
